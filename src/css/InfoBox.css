@@ -1,0 +1,119 @@
+.main{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.infobox {
+    width: 400px;
+    position: relative;
+    box-shadow: -1px 2px 20px 6px rgb(214 214 204 / 80%);
+    padding: 10px;
+}
+.infobox-block{
+    position: relative;
+    display: flex;
+    
+}
+.infobox-information{
+    width: 100%;
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.img-block{
+    height: 400px;
+    margin-bottom: 10px;
+    z-index: -1;
+}
+.img-block img{
+    width: 100%;
+    object-fit: cover;
+}
+.title-block a {
+    color: #000;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+}
+.title-block a:hover{
+    color:#f3ef1deb;
+    text-decoration: underline;
+}
+.description-block{
+    position: absolute;
+    bottom: 0; 
+    transform: translateY(50%);
+    transition: transform .5s;
+    transition: transform .5s,-webkit-transform .5s;
+    margin-bottom: 20px;
+    padding: 0 8px;
+    z-index: 1;
+}
+.description-block.toggle{
+    transform: translateY(0);
+}
+.text p{
+   
+    text-align: justify;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.616);
+
+    
+}
+.text .hidden-element{
+    
+    opacity: 0;
+    transition: opacity .4s .1s;
+    
+}
+.text .hidden-element.toggle{
+   
+    opacity:1;
+    
+    
+}
+.toogle
+{
+    position: relative;
+    z-index: 2;
+}
+.toogle button{
+    border:0;
+    background: transparent;
+    color:#000;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+   
+}
+.toogle button:hover{
+    border:0;
+    background: transparent;
+    color:#f3ef1deb;
+}
+.controlButtons{
+    position: relative;
+    z-index: 5;
+    margin-top: 30px;
+
+}
+.controlButtons button{
+    border: 1px solid #000;
+    background: transparent;
+    padding: 5px 15px;
+    margin-right: 10px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.controlButtons button:hover
+{
+    border-color:#f3ef1deb;
+}
+.controlButtons button.non-active{
+    border-color: #a2a2a2;
+    color: #a2a2a2;
+}
